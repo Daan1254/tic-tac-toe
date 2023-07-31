@@ -1,3 +1,4 @@
+import React from "react";
 import {twMerge} from "tailwind-merge";
 
 export type ButtonProps = {
@@ -7,8 +8,8 @@ export type ButtonProps = {
 }
 export default function Button({ children, onClick, className }: ButtonProps) {
     return (
-        <button onClick={onClick} className={twMerge('px-3 py-2 w-full bg-secondary text-white rounded border-0', className)}>
-            {children}
-        </button>
+        <div className="p-6 ">
+            <button onClick={onClick} className={`${twMerge('p-4 bg-green-400 hover:bg-green-500 w-full rounded-lg shadow text-xl font-medium uppercase text-white', className)}`}>{children}</button>
+        </div>
     )
 }
