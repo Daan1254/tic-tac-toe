@@ -1,5 +1,5 @@
 import React from "react";
-import {Player} from "@/pages";
+import {Player} from "@/pages/[uuid]";
 
 export default function PlayerRow({name, id, rating}: Player) {
     function kickPlayer() {
